@@ -1,0 +1,10 @@
+The following CSS rule may cause unexpected behavior:
+
+```css
+div {
+  width: 100%;
+  box-sizing: border-box;
+}
+```
+
+This rule sets the `width` to `100%` and `box-sizing` to `border-box`.  While seemingly harmless, it can lead to unexpected horizontal scrollbars if the element's content (including padding and border) exceeds the available width of its parent container.
